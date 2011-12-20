@@ -1,7 +1,8 @@
 {
         "project": {
             "name": "My Project name",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
+            "style": "default"
         },
         "milestones": {
             "milestone name 1":{

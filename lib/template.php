@@ -6,7 +6,7 @@
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link href="lib/css/style.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="lib/css/<?= $project['style'] ?>.css" type="text/css" rel="stylesheet" media="screen">
     <title>TinyProgress</title>
 </head>
 <body>
