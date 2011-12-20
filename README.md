@@ -11,20 +11,32 @@ Create a new JSON file in the `lib/progress/` folder, containing the progress in
 The file structure is the following:
 
     {
-        "milestone name 1":{
-            "task name 1":{
-                "part 1": "1/5",
-                "part 2": 22,
-                "part whatever": "10%"
+        project: {
+            name: "My Project name",
+            description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
+        },
+        milestones: {
+            "milestone name 1":{
+                "feature name 1":{
+                    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
+                    "tasks": {
+                        "Task 1": "1/5",
+                        "Task 2": 22,
+                        "Task whatever": 10
+                    }
+                },
+                "feature name 2":{
+                    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
+                    "tasks": {
+                        "Task 1": "1/5",
+                        "Task 2": 22,
+                        "Task whatever": 10
+                    }
+                }
             },
-            "task name 2":{
-                "part 1": "1/5",
-                "part 2": 22,
-                "part whatever": 10
+            "milestone name 2":{
+            },
+            "milestone name x":{
             }
-        },
-        "milestone name 2":{
-        },
-        "milestone name x":{
         }
     }

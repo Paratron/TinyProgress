@@ -1,0 +1,224 @@
+body{
+    background: #606060;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+}
+
+article{
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+    border-left: #333 solid 1px;
+    border-right: #333 solid 1px;
+    margin-top: 10px;
+    border-top: #333 solid 1px;
+}
+
+.meta{
+    p{
+        padding: 10px;
+        margin: 0;
+        border-bottom: #333 solid 1px;
+    }
+}
+
+h1{
+    //Project title
+    background: #000;
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#474747), to(#333));
+    text-shadow: 0 1px 2px #000;
+    margin: 0;
+    padding: 10px;
+}
+
+h2{
+    //Milestone title
+    margin: 0;
+    padding-top: 10px;
+    text-shadow: 0 1px 2px #333;
+    margin-bottom: 5px;
+    padding-left: 15px;
+}
+
+h3{
+    //Feature title
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+
+
+.milestone{
+    border-bottom: #333 solid 5px;
+
+    & > .progress{
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.feature{
+    border-top: #505050 solid 1px;
+
+    small{
+        color: #aaa;
+        font-size: 11px;
+        &:before{
+            content: "- ";
+        }
+    }
+
+    p{
+        width: 500px;
+        padding-left: 10px;
+    }
+
+    & > .progress{
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+
+    &:hover{
+        background-color: #707070;
+
+        .task{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            height: 32px;
+        }
+    }
+}
+
+.task{
+    -webkit-transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 0px;
+    padding: 0 10px;
+
+    &:hover{
+        background-color: #909090;
+    }
+
+    .label{
+        padding-left: 15px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    & > .progress{
+        height: 12px;
+        background: #484848;
+
+        &:before{
+            margin-top: 5px;
+        }
+
+        .bar{
+            top: 4px;
+        }
+
+        .label{
+            height: 12px;
+            line-height: 10px;
+            font-size: 10px;
+            background: #484848;
+        }
+    }
+}
+
+.progress{
+    position: relative;
+    display: block;
+    height: 18px;
+    -webkit-border-radius: 9px;
+    background: #3b3b3b;
+    border-top: #181818 solid 1px;
+    border-bottom: #6e6e6e solid 1px;
+    width: 470px;
+    text-align: center;
+    vertical-align: top;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &:before{
+        display: block;
+        content: "";
+        height: 0;
+        margin-top: 8px;
+        border-top: #181818 solid 1px;
+        border-bottom: #636363 solid 1px;
+    }
+
+    .bar{
+        display: block;
+        position: absolute;
+        top: 7px;
+        left: 14px;
+        height: 2px;
+        border: #181818 solid 1px;
+        -webkit-border-radius: 2px;
+
+        &:before{
+            content: "";
+            display: block;
+            height: 0;
+
+            -webkit-border-radius: 2px;
+        }
+    }
+
+    .bar, .orange{
+        &:before{
+            border-top: #febb50 solid 1px;
+            border-bottom: #fe7201 solid 1px;
+        }
+    }
+
+    .red{
+        &:before{
+            border-top: #fe6251 solid 1px;
+            border-bottom: #fd0012 solid 1px;
+        }
+    }
+
+    .yellow{
+        &:before{
+            border-top: #fff453 solid 1px;
+            border-bottom: #ffc500 solid 1px;
+        }
+    }
+
+    .green{
+        &:before{
+            border-top: #88ff51 solid 1px;
+            border-bottom: #7bfd00 solid 1px;
+        }
+    }
+    
+    .label{
+        display: block;
+        height: 18px;
+        line-height: 18px;
+        -webkit-border-radius: 9px;
+        background: #3b3b3b;
+        border-top: #181818 solid 1px;
+        border-bottom: #6e6e6e solid 1px;
+        width: 70px;
+        position: absolute;
+        top: -1px;
+        right: -80px;
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+    }
+
+
+}
